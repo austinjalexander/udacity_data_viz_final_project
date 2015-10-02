@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stocker - Udacity Data Visualization Final Project</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+
+  <style type="text/css">
+    circle.dimple-series-1 {
+      fill: red;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    function draw(data) {
+
+      /* BEGIN D3.js setup code */
+      "use strict";
+      var margin = 75,
+          width = 800 - margin,
+          heigh = 600 - margin;
+
+      //debugger;
+
+      d3.select("body")
+        .append("h2")
+        .text("World Cup Attendance");
+
+      var svg = d3.select("body")
+                 .append("svg")
+                   .attr("width", width + margin)
+                   .attr("height", heigh + margin)
+                 .append("g")
+                   .attr("class", "chart");
+      /* END: D3.js setup code */
+
+      /* BEGIN Dimple.js construction code */
+      d3.select('svg')
+        .selectAll('circle')
+        .data(data)
+        .enter()
+        .append('circle');
+
+      var time_extent = d3.extent(data, function(d) {
+        return d['date'];
+      });
+
+      var count_extent = d3.extent(data, function(d) {
+        return d['attendance'];
+      });
+
+      var time_scale = d3.time.scale()
+                         .range([margin, width])
+                         .domain(time_extent);
+
+      var count_scale = d3.time.linear()
+                         .range([height, margin])
+                         .domain(count_extent);
+
+
+      var time_axis = d3.svg.axis()
+                            .scale(time_scale)
+                            .ticks(d3.time.years, 2);
+
+      var count_axis = d3.svg.axis()
+                            .scale(count_scale)
+                            .orient("left");
+
+
+      stock_chart.addSeries(null, dimple.plot.line);
+      stock_chart.addSeries(null, dimple.plot.scatter);
+
+      stock_chart.draw();
+      /* END: D3.js setup code */
+
+      $('circle').css("fill", "red");
+
+      /* CHROME JS CONSOLE DEBUGGER */
+      // > data
+      // > console.table(data)
+
+    };
+
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+
+  format = d3.time.format("%d-%m-%Y (%H:%M h)");
+
+    d3.tsv("world_cup_geo.csv", function(d) {
+      d['date'] = format.parse(d['date']);
+      d['attendance'] = +d['attendance'];
+      return d;
+    }, draw);
+  </script>
+</body>
+</html>

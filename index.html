@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wino - Udacity Data Visualization Final Project</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+quality_label <- "quality (score between 0 and 10)"
+alcohol_label <- "alcohol (% by volume)"
+vol_acid_label <- ""
+sulph_label <- ""
+
+<body>
+  <h1>Wino</h1>
+  <h2>Chemical Properties of Wine and the Effect on Quality Score</h2>
+  <div id="chart_div">
+    <script type="text/javascript">
+
+      "use strict";
+
+      var svg = dimple.newSvg("#chart_div", 1000, 600);
+
+      d3.csv("data/wineQualityReds.csv", function(data) {
+
+        var wine_chart = new dimple.chart(svg, data);
+
+        var x = wine_chart.addMeasureAxis("x", "sulphates");
+        x.tickFormat = ".2f";
+        x.title = "sulphates (potassium sulphate - g / dm3)";
+        x.overrideMin = 0.5
+        x.overrideMax = 0.9
+
+        var y = wine_chart.addMeasureAxis("y", "volatile.acidity");
+        y.tickFormat = ".1f";
+        y.title = "volatile acidity (acetic acid - g / dm^3)";
+        y.overrideMin = 0.2
+        y.overrideMax = 1.0
+
+        var z = wine_chart.addLogAxis("z", "alcohol", 0.1);
+
+        var s = wine_chart.addSeries(["alcohol", "quality"], dimple.plot.bubble);
+        s.addOrderRule("quality", true);
+        s.aggregate = dimple.aggregateMethod.avg;
+
+        var quality_legend = wine_chart.addLegend(10, 10, 650, 35, "right", [s]);
+
+        wine_chart.draw();
+
+        d3.selectAll(".dimple-bubble").style("visibility", "hidden");
+
+        debugger;
+
+/*
+        for (var i = 3; i <= 8; i++) {
+          d3.selectAll(".dimple-bubble.dimple-" + i)
+            .style("visibility", "visible");
+
+          //d3.selectAll(".dimple-bubble").style("visibility", "hidden");
+
+        }
+*/
+
+
+      });
+    </script>
+  </div>
+</body>
+</html>
