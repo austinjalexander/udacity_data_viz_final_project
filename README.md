@@ -12,14 +12,15 @@ Explore your data set and craft a message or story around your data! Think about
 
 
 ## Design
-Initially, based on my exploratory data analysis, I wanted to create massive blob-like clusters of the data (i.e., that would not have visualized each individual example): ![Initial Visualization](images/initial.png)
+Initially, based on my exploratory data analysis, I wanted to create massive 
+blob-like clusters of the data (i.e., that would not have visualized 
+each individual example): ![Initial Visualization](images/initial.png)
 
+I wanted to use color to indicate quality scores and the _x_ and _y_ axes 
+to show amounts of alcohol and volatile acidity. 
 
-However, after 
-receiving some feedback and reflecting, I decided to visualize each data point
-using a bubble chart.
+However, after receiving some feedback and reflecting, I decided to visualize each data point using a bubble chart.
 
-The student explains initial design decisions such as chart type, visual encodings, layout, legends, or hierarchy. These are included at the beginning of the Design section in the README.md file.
 
 ## Feedback
 My feedback was mostly positive. Humorously, as more time passed, the feedback
