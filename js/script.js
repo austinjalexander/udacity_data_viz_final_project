@@ -47,7 +47,7 @@ d3.csv("data/wineQualityReds.csv", function(data) {
   });
   var mean = (sum/alcohol.length).toFixed(1);
 
-  $("#sizes").html("(min:"+min+", mean:"+mean+", max:"+max+")");
+  $("#sizes").html("(min:"+min+" &middot; mean:"+mean+" &middot; max:"+max+")");
 
 });
       
