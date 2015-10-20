@@ -30,20 +30,28 @@ My feedback was mostly positive. Humorously, as more time passed, the feedback
 continued to include more and more desired features, many of which I added 
 (e.g., the ability to remove/add certain bubbles based on quality score).
 
-Here are some answers I received to the feedback questions that were 
+Here are some of the answers I received to the feedback questions that were 
 provided by Udacity:
 
 #### What do you notice in the visualization?
-"Pink!"
+"Pink and blurry!" [first version]
+"The red spikes stick out the most." [first version]
+"It seems like there are more ratings." [one of the later versions]
 
 #### What questions do you have about the data?
+"Where did you get the data?" [first version]
+"What kind of alcohol?" [first version]
+"What are the circles?" [middle version]
 
+#### What relationships do you notice?
+"It seems like the 7 and 8 clusters are grouped similarly." [first version]
 
-What relationships do you notice?
 What do you think is the main takeaway from this visualization?
-Is there something you don’t understand in the graphic?
+"It seems that the more acidic the alcohol is, the worse the quality is." [first version]
 
-The student collects feedback from at least three people throughout the process of creating the data visualization. The feedback is documented in the Feedback section of the README.md file.
+Is there something you don’t understand in the graphic?
+"What does % by volume mean?" [first version]
+
 
 The student presents evidence that the visualization has been improved since the first sketch or the first coded version of the visualization. The student has listed all of the feedback in the Feedback section of the README.md file. Most design choices and changes are accounted for in the Design section of the README.md file.
 
