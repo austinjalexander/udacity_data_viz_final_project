@@ -34,20 +34,21 @@ Here are some of the answers I received to the feedback questions that were
 provided by Udacity:
 
 #### What do you notice in the visualization?
-"Pink and blurry!" [first version]
-"The red spikes stick out the most." [first version]
-"It seems like there are more ratings." [one of the later versions]
+-  "Pink and blurry!" [first version]
+-  "The red spikes stick out the most." [first version]
+-  "It seems like there are more ratings." [one of the later versions]
 
 #### What questions do you have about the data?
-"Where did you get the data?" [first version]
-"What kind of alcohol?" [first version]
-"What are the circles?" [middle version]
+-  "Where did you get the data?" [first version]
+-  "What kind of alcohol?" [first version]
+-  "What are the circles?" [middle version]
 
 #### What relationships do you notice?
-"It seems like the 7 and 8 clusters are grouped similarly." [first version]
+-  "It seems like the 7 and 8 clusters are grouped similarly." [first version]
 
 What do you think is the main takeaway from this visualization?
-"It seems that the more acidic the alcohol is, the worse the quality is." [first version]
+-  "It seems that the more acidic the alcohol is, 
+the worse the quality is." [first version]
 
 Is there something you don’t understand in the graphic?
 "What does % by volume mean?" [first version]
