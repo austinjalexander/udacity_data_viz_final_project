@@ -2,6 +2,8 @@
 
 ## Summary
 
+ in no more than 4 sentences, briefly introduce your data visualization and add any context that can help readers understand it
+
 zoomed in to remove outliers
 
 alcohol on a log scale to exaggerate difference between values 
@@ -12,9 +14,10 @@ Explore your data set and craft a message or story around your data! Think about
 
 
 ## Design
-Initially, based on my exploratory data analysis, I wanted to create massive 
-blob-like clusters of the data (i.e., that would not have visualized 
-each individual example): ![Initial Visualization](images/initial.png)
+Initially, based on my exploratory data analysis, I wanted to visualize 
+clusters of the data (i.e., not individual points). Here is my initial
+visualization: 
+![Initial Visualization](images/initial.png)
 
 I wanted to use color to indicate quality scores and the _x_ and _y_ axes 
 to show amounts of alcohol and volatile acidity. 
