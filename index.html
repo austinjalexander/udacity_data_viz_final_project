@@ -9,11 +9,31 @@
 </head>
 
 <body>
-  <h1>Chemical Properties of Wine and their Effect on Quality Scores</h1>
-  <h2>Sulphates vs Volatile Acidity</h2>
-  <h3>Sized by Alcohol Percentage <span id="sizes"></span></h3>
-  <p class="text-center">Quality Scores</p>
+  <h1>
+    Do chemical properties of red wine affect perceived quality?
+    <br />
+    <span id="subtitle">&#127863; <em>visualizing how sulphates, acidity, and alcohol % affect wine score</em> &#127863;</span>
+  </h1>
+  
+  <p id="legend" class="text-center">
+    Red Wine Quality Scores by Color
+    <br />
+    <small id="action_message">click to add/remove wines by score</small>
+  </p>
   <div id="chart_div"></div>
+
+  <div id="summary">
+    <h3>Summary</h3>
+    <p>The visualization above incorporates the data described <a href="https://github.com/austinjalexander/udacity_eda_final_project/blob/master/_OLD/wineQualityInfo.txt" target="_blank">here</a> (with some outliers 
+    removed).</p>
+    <p>Each bubble represents a particular wine, and each wine is located on the graph indicating its sulphate and acidity amounts measured in g/dm<sup>3</sup>
+    (i.e., grams per cubic decimeter).</p>
+
+    <p>The size of each wine bubble indicates the relative alcohol percentage of 
+    that particular wine. These bubbles have been sized on a log scale 
+    in order to emphasize the relative differences between them, 
+    since the range is so small: <span id="sizes"></span>.</p>
+  </div>
 
   <!-- JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
