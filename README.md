@@ -30,12 +30,15 @@ My feedback was mostly positive. Humorously, as more time passed, the feedback
 continued to include more and more desired features, many of which I added 
 (e.g., the ability to remove/add certain bubbles based on quality score).
 
-Here are some answers to the feedback questions that were provided by Udacity:
+Here are some answers I received to the feedback questions that were 
+provided by Udacity:
 
 #### What do you notice in the visualization?
+"Pink!"
+
+#### What questions do you have about the data?
 
 
-What questions do you have about the data?
 What relationships do you notice?
 What do you think is the main takeaway from this visualization?
 Is there something you don’t understand in the graphic?
