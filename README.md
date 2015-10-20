@@ -22,15 +22,19 @@ visualization:
 I wanted to use color to indicate quality scores and the _x_ and _y_ axes 
 to show amounts of alcohol and volatile acidity. 
 
-However, after receiving some feedback and reflecting, I decided to visualize each data point using a bubble chart.
+However, after receiving some feedback and reflecting, I decided to visualize each data point using a bubble chart, while still using color to indicate quality scores.
 
 
 ## Feedback
 My feedback was mostly positive. Humorously, as more time passed, the feedback
 continued to include more and more desired features, many of which I added 
-(e.g., ).
+(e.g., the ability to remove/add certain bubbles based on quality score).
 
-What do you notice in the visualization?
+Here are some answers to the feedback questions that were provided by Udacity:
+
+#### What do you notice in the visualization?
+
+
 What questions do you have about the data?
 What relationships do you notice?
 What do you think is the main takeaway from this visualization?
