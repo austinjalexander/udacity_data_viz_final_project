@@ -33,8 +33,7 @@ are Sized by Alcohol Percentage" to forming a subtitle:
 "How do sulphates, acidity, and alcohol % affect scores?"
 
 Prior to receiving Udacity feedback, the visualization encoded alcohol as 
-bubble radius and all quality scores were colored (see that version here: <a href="pre-udacity-feedback.html" target="_blank">pre-udacity-feedback.html</a>). After receiving Udacity feedback, I removed alcohol as a feature and grouped scores 
-together so that only 3 groups remained.
+bubble radius and all quality scores were colored (that version made use of the following files: <a href="pre-udacity-feedback.html" target="_blank">pre-udacity-feedback.html</a>, <a href="data/wineQualityReds.csv" target="_blank">wineQualityReds.csv</a>, and <a href="pre-udacity-feedback.js" target="_blank">pre-udacity-feedback.js</a>). After receiving Udacity feedback, I removed alcohol as a feature and grouped scores together so that only 3 groups remained.
 
 
 ## Feedback
