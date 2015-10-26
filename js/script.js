@@ -35,5 +35,21 @@ d3.csv("data/data.csv", function(data) {
   // draw visualization
   wine_chart.draw();
 
+  // toggle visibility of bubbles based on score selection
+  $(".dimple-legend").click(function(e) {
+    var quality = e.currentTarget.firstChild.textContent;
+    $(".dimple-bubble.dimple-"+quality).toggle();
+  });
+
+  // initially, remove all bubbles
+  for (var i = 0; i <= 2; i++) {
+    $(".dimple-bubble.dimple-"+i).toggle();
+  }
+
+  // initially, make each set of score bubbles load (slowly) before the next
+  for (var i = 0; i <= 2; i++) {
+    $(".dimple-bubble.dimple-"+i).delay(1000*i).fadeIn(500);
+  }
+
 });
       
