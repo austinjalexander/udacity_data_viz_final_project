@@ -13,11 +13,15 @@ visualization to predict how it would be scored.
 ## Design
 Initially, based on my exploratory data analysis, I wanted to visualize 
 clusters of the data (i.e., not individual points). Here is my initial
-visualization after exploring: 
+visualization after exploring (this visualization should be understood as my first
+one): 
 ![Initial Visualization](images/initial.png)
 
 I wanted to use color to indicate quality scores and the _x_ and _y_ axes 
-to show amounts of alcohol and volatile acidity. 
+to show amounts of alcohol and volatile acidity. For the final version of the 
+visualization, I chose color to indicate quality scores so that groupings of 
+of scores would be easier to see. Making use of the spatial axes for sulphates and 
+volatile acidity encodes the relationship between the two features.
 
 However, after receiving some feedback and reflecting, I decided to visualize each data point using a bubble chart, while still using color to indicate quality scores. 
 The feedback I received also encouraged me to make certain elements more 
@@ -27,6 +31,10 @@ title to the question: "Do chemical properties of wine affect quality?" Also,
 I went from simply listing "Sulphates vs Volatile Acidity" and "Bubbles 
 are Sized by Alcohol Percentage" to forming a subtitle: 
 "How do sulphates, acidity, and alcohol % affect scores?"
+
+Prior to receiving Udacity feedback, the visualization encoded alcohol as 
+bubble radius and all quality scores were colored (see that version here: <a href="pre-udacity-feedback.html" target="_blank">pre-udacity-feedback.html</a>). After receiving Udacity feedback, I removed alcohol as a feature and grouped scores 
+together so that only 3 groups remained.
 
 
 ## Feedback

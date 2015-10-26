@@ -12,7 +12,7 @@
   <h1>
     Do chemical properties of red wine affect perceived quality?
     <br />
-    <span id="subtitle">&#127863; <em>visualizing how sulphates and acidity relate to wine score</em> &#127863;</span>
+    <span id="subtitle">&#127863; <em>visualizing how sulphates, acidity, and alcohol % affect wine score</em> &#127863;</span>
   </h1>
   
   <p id="legend" class="text-center">
@@ -28,12 +28,17 @@
     removed).</p>
     <p>Each bubble represents a particular wine, and each wine is located on the graph indicating its sulphate and acidity amounts measured in g/dm<sup>3</sup>
     (i.e., grams per cubic decimeter).</p>
+
+    <p>The size of each wine bubble indicates the relative alcohol percentage of 
+    that particular wine. These bubbles have been sized on a log scale 
+    in order to emphasize the relative differences between them, 
+    since the range is so small: <span id="sizes"></span>.</p>
   </div>
 
   <!-- JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/pre-udacity-feedback.js"></script>
 </body>
 </html>
