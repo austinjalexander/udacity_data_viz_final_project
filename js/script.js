@@ -35,12 +35,6 @@ d3.csv("data/data.csv", function(data) {
   // draw visualization
   wine_chart.draw();
 
-  // toggle visibility of bubbles based on score selection
-  $(".dimple-legend").click(function(e) {
-    var quality = e.currentTarget.firstChild.textContent;
-    $(".dimple-bubble.dimple-"+quality).toggle();
-  });
-
   // initially, remove all bubbles
   for (var i = 0; i <= 2; i++) {
     $(".dimple-bubble.dimple-"+i).toggle();
@@ -50,6 +44,20 @@ d3.csv("data/data.csv", function(data) {
   for (var i = 0; i <= 2; i++) {
     $(".dimple-bubble.dimple-"+i).delay(1000*i).fadeIn(500);
   }
+
+  $("text.dimple-legend-text:contains('0')").text('low');
+  $("text.dimple-legend-text:contains('1')").text('mid');
+  $("text.dimple-legend-text:contains('2')").text('high');
+
+  // toggle visibility of bubbles based on score selection
+  $(".dimple-legend").click(function(e) {
+    var quality = e.currentTarget.firstChild.textContent;
+
+    var scores = { "low":"0", "mid":"1", "high":"2" }
+
+    $(".dimple-bubble.dimple-"+scores[quality]).toggle();
+  });
+
 
 });
       
